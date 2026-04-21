@@ -1,0 +1,13 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial}
+body{display:flex;height:100vh;background:#f4ecec}
+.sidebar{width:200px;background:#0a2d5e;color:#fff;padding:20px}
+.main{flex:1;padding:20px}
+.top{display:flex;justify-content:space-between;margin-bottom:20px}
+.top input{padding:10px;width:60%;border-radius:8px;border:none}
+button{background:#ff814d;color:#fff;border:none;padding:10px;border-radius:8px;cursor:pointer}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:20px}
+.cards div{background:#fff;padding:20px;border-radius:10px;text-align:center}
+.kanban{display:flex;gap:10px}
+.coluna{background:#eaeaea;padding:10px;border-radius:10px;width:250px;min-height:300px}
+.task{background:#fff;padding:10px;margin:5px 0;border-radius:8px;cursor:grab}
+.task:active{cursor:grabbing}

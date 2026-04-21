@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="../img/favicon.png">
+</head>
+<body>
+
+<div class="login-container">
+
+    <div class="login-box">
+
+        <!-- LOGO -->
+        <img src="../img/logo.png" alt="Logo" class="logo-img">
+
+        <p class="subtitle">Onde nada se perde</p>
+
+        <!-- USUÁRIO -->
+        <div class="input-box">
+            <i class="fa fa-user"></i>
+            <input type="text" id="usuario" placeholder="Usuário">
+        </div>
+
+        <!-- SENHA -->
+        <div class="input-box">
+            <i class="fa fa-lock"></i>
+            <input type="password" id="senha" placeholder="Senha">
+        </div>
+
+        <!-- BOTÃO -->
+        <button onclick="login()">Entrar</button>
+
+        <!-- MENSAGEM DE ERRO -->
+        <p id="erro" style="color:red; margin-top:10px; display:none;">
+            Usuário ou senha inválidos
+        </p>
+
+    </div>
+
+</div>
+
+<script>
+
+function login() {
+    const user = document.getElementById("usuario").value;
+    const pass = document.getElementById("senha").value;
+
+    // LOGIN SIMPLES (depois você pode ligar com banco)
+    if (user === "adm" && pass === "123") {
+
+        localStorage.setItem("logado", "true");
+
+        window.location.href = "../index.html";
+
+    } else {
+        document.getElementById("erro").style.display = "block";
+    }
+}
+
+</script>
+
+</body>
+</html>

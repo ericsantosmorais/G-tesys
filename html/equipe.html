@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Equipe</title>
+
+<link rel="stylesheet" href="../css/style.css">
+<link rel="icon" href="../img/favicon.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="sidebar">
+        <img src="../img/favicon.png" class="logo-side">
+
+        <ul>
+            <li onclick="ir('../index.html')"><i class="fa fa-chart-line"></i> Dashboard</li>
+            <li onclick="ir('equipe.html')"><i class="fa fa-users"></i> Equipe</li>
+            <li><i class="fa fa-chart-pie"></i> Relatórios</li>
+            <li><i class="fa fa-gear"></i> Configurações</li>
+            <li onclick="logout()"><i class="fa fa-right-from-bracket"></i> Sair</li>
+        </ul>
+
+        <div class="user-box">
+            <img src="../img/favicon.png">
+            <div>
+                <p>Leonardo</p>
+                <small>Gestor</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+
+        <div class="topbar">
+            <input class="search" placeholder="Pesquisar membro...">
+            <button class="btn"><i class="fa fa-user-plus"></i> Novo Membro</button>
+        </div>
+
+        <div class="cards">
+
+            <div class="card blue">
+                <i class="fa fa-users"></i>
+                <h3>12</h3>
+                <p>Total</p>
+            </div>
+
+            <div class="card green">
+                <i class="fa fa-user-check"></i>
+                <h3>8</h3>
+                <p>Ativos</p>
+            </div>
+
+        </div>
+
+        <div class="flex">
+
+            <div class="table">
+                <h3>Membros</h3>
+
+                <div class="member">
+                    <img src="../img/user.png">
+                    <div>
+                        <p>João Silva</p>
+                        <span>Supervisor</span>
+                    </div>
+                    <span class="status ativo">Ativo</span>
+                </div>
+
+            </div>
+
+            <div class="side-box">
+                <h3>Filtros</h3>
+                <button class="filter-btn">Todos</button>
+                <button class="filter-btn">Ativos</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function ir(pagina) {
+    window.location.href = pagina;
+}
+</script>
+
+<script>
+function logout() {
+    localStorage.removeItem("logado"); // apaga sessão
+    window.location.href = "login.html"; // volta pro login
+}
+</script>
+
+
+</body>
+</html>

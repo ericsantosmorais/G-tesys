@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #87a6ff, #ffffff);
+}
+
+/* LOGIN */
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-box {
+    position: relative;
+    margin: 10px 0;
+}
+
+.input-box i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.input-box input:focus {
+    outline: none;
+    border: 1px solid #87a6ff;
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5c35;
+}
+
+.subtitle {
+    margin: 10px 0 20px;
+    color: #ff5c35;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.login-box button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    background: #ff5c35;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    background: #0e2a4d;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    color: #ff5c35;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar li {
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.user-box {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+/* MAIN */
+.main {
+    flex: 1;
+    padding: 20px;
+}
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.search {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background: #ddd;
+}
+
+.btn {
+    background: #ff5c35;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    background: #eee;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.table {
+    background: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 2;
+}
+
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.side-box {
+    flex: 1;
+    background: #eee;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.logo-img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+
+/* LOGO SIDEBAR */
+.logo-side {
+    width: 140px;
+    margin-bottom: 30px;
+}
+
+/* SIDEBAR ÍCONES */
+.sidebar li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar li:hover {
+    color: #ff5c35;
+}
+
+/* USER BOX */
+.user-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-box img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* CARDS MELHORADOS */
+.card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.card i {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* CORES */
+.blue { background: #4a7cff; }
+.green { background: #2ecc71; }
+.red { background: #e74c3c; }
+.orange { background: #f39c12; }
+
+/* HOVER */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* TAREFAS */
+.task {
+    background: white;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.task span {
+    font-size: 12px;
+    color: gray;
+}
+
+/* GRÁFICO FAKE */
+.chart {
+    height: 150px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #87a6ff, #5a7cff);
+    margin-top: 15px;
+}
+
+/* BOTÃO MELHORADO */
+.btn i {
+    margin-right: 5px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+/* SEARCH */
+.search {
+    background: #eee;
+}
+
+/* MEMBROS */
+.member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.member:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.member img {
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.member div {
+    flex: 1;
+    margin-left: 10px;
+}
+
+.member span {
+    font-size: 12px;
+    color: gray;
+}
+
+/* STATUS */
+.status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    color: white;
+}
+
+.ativo { background: #2ecc71; }
+.pausa { background: #f39c12; }
+.inativo { background: #e74c3c; }
+
+/* FILTROS */
+.filter-btn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 20px;
+    background: #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover {
+    background: #87a6ff;
+    color: white;
+}
